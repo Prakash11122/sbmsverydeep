@@ -1,0 +1,37 @@
+package com.it.pradhan;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Bean;
+import org.springframework.core.env.Environment;
+
+import com.it.pradhan.api.PlayerConfig;
+import com.it.pradhan.beans.Game;
+
+@SpringBootApplication
+public class NestedContainersApplication {
+	
+	@Autowired
+	private Environment env;
+	
+	@Bean()
+	public Game game() {
+		Game game = new Game();
+		game.setName(env.getProperty("name"));
+		
+		return game;
+	}
+
+	public static void main(String[] args) {
+		SpringApplication springApplication = new SpringApplicationBuilder(NestedContainersApplication.class)
+				.parent(PlayerConfig.class).build();
+		ApplicationContext context = springApplication.run(args);
+		
+		Game game = context.getBean("game", Game.class);
+		System.out.println(game);
+	}
+
+}

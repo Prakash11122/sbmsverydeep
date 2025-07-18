@@ -1,0 +1,10 @@
+package com.it.pradhan.beans;
+
+public class Players {
+	
+	private int uniquePlayerNo;
+	private String playersName;
+	
+	
+
+}

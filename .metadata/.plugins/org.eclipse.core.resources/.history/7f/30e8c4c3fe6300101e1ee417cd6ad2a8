@@ -1,0 +1,5 @@
+package com.it.pradhan.api;
+
+public class PlayerConfig {
+
+}

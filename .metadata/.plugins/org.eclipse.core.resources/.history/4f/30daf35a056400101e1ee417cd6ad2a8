@@ -1,0 +1,4 @@
+spring.application.name=nested-containers
+uniquePlayerNo=11
+playersName=prakaash
+name=cricker
