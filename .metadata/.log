@@ -1115,3 +1115,303 @@ java.lang.IllegalStateException: Unexpected null value present!
 
 !ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-25 16:18:11.423
 !MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.core.jobs 2 2 2025-07-25 16:24:54.802
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.springsource.ide.eclipse.commons.livexp.core.AsyncLiveExpression$1 RUNNING
+	 at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	 at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52)
+	 at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1211)
+	 at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1828)
+	 at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:1139)
+	 at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	 at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	 at java.base/java.net.InetAddress.getByName(InetAddress.java:1568)
+	 at java.base/java.net.InetSocketAddress.<init>(InetSocketAddress.java:230)
+	 at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	 at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	 at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	 at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+	 at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377)
+	 at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193)
+	 at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1237)
+	 at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1123)
+	 at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179)
+	 at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:141)
+	 at org.springframework.ide.eclipse.boot.core.initializr.InitializrServiceSpec.parseFrom(InitializrServiceSpec.java:76)
+	 at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardModel.parseJsonFrom(NewSpringBootWizardModel.java:535)
+	 at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardModel.discoverOptions(NewSpringBootWizardModel.java:423)
+	 at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardModel.<init>(NewSpringBootWizardModel.java:134)
+	 at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardFactoryModel.lambda$0(NewSpringBootWizardFactoryModel.java:28)
+	 at org.springframework.ide.eclipse.boot.wizard.InitializrFactoryModel$1.compute(InitializrFactoryModel.java:54)
+	 at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.refresh(LiveExpression.java:74)
+	 at org.springsource.ide.eclipse.commons.livexp.core.AsyncLiveExpression.syncRefresh(AsyncLiveExpression.java:134)
+	 at org.springsource.ide.eclipse.commons.livexp.core.AsyncLiveExpression$1.run(AsyncLiveExpression.java:101)
+	 at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2025-07-25 16:24:55.213 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=21.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/prakashpradhan/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.eclipse.epp.package.jee.product -keyring /Users/prakashpradhan/.eclipse_keyring -data file:/Users/prakashpradhan/Documents/java/SBMSBYSRIMAN/
+
+!ENTRY ch.qos.logback.classic 1 0 2025-07-25 16:24:57.225
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-07-25 16:24:57.343
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (3243) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-07-25 16:24:58.365
+!MESSAGE Logback config file: /Users/prakashpradhan/Documents/java/SBMSBYSRIMAN/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-07-25 16:24:58.573
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-07-25 16:24:58.573
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-07-25 16:24:58.841
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-07-25 16:24:58.841
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-07-25 16:25:02.709
+!MESSAGE Boot project ADDED: 01fluent-builder-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-07-25 16:25:02.710
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-07-25 16:25:02.732
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-07-25 16:25:02.740
+!MESSAGE Boot project ADDED: 02nested-containers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-07-25 16:25:02.743
+!MESSAGE Boot project ADDED: 03Boot-Listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-07-25 16:25:02.744
+!MESSAGE Boot project ADDED: 04_bootApplication.properties
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-07-25 16:25:02.752
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/bin/java
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-XX:ErrorFile=/Users/prakashpradhan/Documents/java/SBMSBYSRIMAN/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1753440902751
+-Dlanguageserver.hover-timeout=225
+-jar
+/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/prakashpradhan/.p2/pool/plugins/org.springframework.tooling.boot.ls_1.57.0.202409101848/servers/spring-boot-language-server/spring-boot-language-server-1.57.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-07-25 16:25:02.752
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-07-25 16:25:02.759
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 38388
+
+!ENTRY org.eclipse.core.jobs 2 2 2025-07-25 16:26:15.206
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.springsource.ide.eclipse.commons.livexp.core.AsyncLiveExpression$1 RUNNING
+	 at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	 at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52)
+	 at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1211)
+	 at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1828)
+	 at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:1139)
+	 at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	 at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	 at java.base/java.net.InetAddress.getByName(InetAddress.java:1568)
+	 at java.base/java.net.InetSocketAddress.<init>(InetSocketAddress.java:230)
+	 at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	 at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	 at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	 at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+	 at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377)
+	 at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193)
+	 at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1237)
+	 at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1123)
+	 at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179)
+	 at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:141)
+	 at org.springframework.ide.eclipse.boot.core.initializr.InitializrServiceSpec.parseFrom(InitializrServiceSpec.java:76)
+	 at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardModel.parseJsonFrom(NewSpringBootWizardModel.java:535)
+	 at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardModel.discoverOptions(NewSpringBootWizardModel.java:423)
+	 at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardModel.<init>(NewSpringBootWizardModel.java:134)
+	 at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardFactoryModel.lambda$0(NewSpringBootWizardFactoryModel.java:28)
+	 at org.springframework.ide.eclipse.boot.wizard.InitializrFactoryModel$1.compute(InitializrFactoryModel.java:54)
+	 at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.refresh(LiveExpression.java:74)
+	 at org.springsource.ide.eclipse.commons.livexp.core.AsyncLiveExpression.syncRefresh(AsyncLiveExpression.java:134)
+	 at org.springsource.ide.eclipse.commons.livexp.core.AsyncLiveExpression$1.run(AsyncLiveExpression.java:101)
+	 at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2025-07-25 16:26:56.165 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=21.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/prakashpradhan/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.eclipse.epp.package.jee.product -keyring /Users/prakashpradhan/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2025-07-25 16:26:57.714
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-07-25 16:26:57.915
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (3243) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-07-25 16:27:03.983
+!MESSAGE Logback config file: /Users/prakashpradhan/Documents/java/SBMSBYSRIMAN/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-07-25 16:27:04.159
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-07-25 16:27:04.159
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-07-25 16:27:04.325
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-07-25 16:27:04.325
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-07-25 16:27:07.538
+!MESSAGE Boot project ADDED: 01fluent-builder-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-07-25 16:27:07.539
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-07-25 16:27:07.562
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-07-25 16:27:07.567
+!MESSAGE Boot project ADDED: 02nested-containers
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-07-25 16:27:07.569
+!MESSAGE Boot project ADDED: 03Boot-Listeners
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-07-25 16:27:07.569
+!MESSAGE Boot project ADDED: 04_bootApplication.properties
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-07-25 16:27:07.575
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/bin/java
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-XX:ErrorFile=/Users/prakashpradhan/Documents/java/SBMSBYSRIMAN/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1753441027574
+-Dlanguageserver.hover-timeout=225
+-jar
+/Applications/Eclipse.app/Contents/Eclipse/../../../../Users/prakashpradhan/.p2/pool/plugins/org.springframework.tooling.boot.ls_1.57.0.202409101848/servers/spring-boot-language-server/spring-boot-language-server-1.57.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-07-25 16:27:07.576
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-07-25 16:27:07.580
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 38435
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-07-25 16:32:44.703
+!MESSAGE Classpath changed for project: 05_boot_custom_configuration
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-07-25 16:32:44.706
+!MESSAGE Boot project ADDED: 05_boot_custom_configuration
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-25 16:32:55.640
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-25 16:32:55.641
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-25 16:32:55.642
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-25 16:32:55.642
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-25 16:32:55.644
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-25 16:32:55.646
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.jface 2 0 2025-07-25 16:32:55.836
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-07-25 16:32:55.836
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolInWorkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolInWorkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-07-25 16:32:55.850
+!MESSAGE Unexpected null value present!
+!STACK 0
+java.lang.IllegalStateException: Unexpected null value present!
+	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticTokensClient.requestFullSemanticTokens(SemanticTokensClient.java:45)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.fullReconcile(SemanticHighlightReconcilerStrategy.java:239)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.initialReconcile(SemanticHighlightReconcilerStrategy.java:258)
+	at org.eclipse.ui.internal.genericeditor.CompositeReconcilerStrategy.initialReconcile(CompositeReconcilerStrategy.java:48)
+	at org.eclipse.jface.text.reconciler.Reconciler.initialProcess(Reconciler.java:223)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:177)
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-25 16:56:43.343
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-25 16:56:43.346
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-25 16:56:43.347
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-25 16:56:43.347
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-25 16:56:43.350
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-25 16:56:43.352
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-07-25 17:02:37.895
+!MESSAGE Classpath changed for project: 05_boot_custom_configuration
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-07-25 17:12:38.537
+!MESSAGE Classpath changed for project: 05_boot_custom_configuration
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-25 17:12:38.549
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-25 17:12:38.550
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-25 17:12:38.551
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-25 17:12:38.552
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-25 17:12:38.556
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-07-25 17:12:38.558
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2025-07-25 17:16:55.279
+!MESSAGE No repository found at http://download.eclipse.org/technology/m2e/releases/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2025-07-25 17:28:14.147
+!MESSAGE No repository found at http://dl.bintray.com/testng-team/testng-p2-release/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2025-07-25 17:28:53.163
+!MESSAGE No repository found at http://download.eclipse.org/usssdk/drops/nightly/N20241101-034143.
