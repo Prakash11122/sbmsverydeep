@@ -1,7 +1,0 @@
-package com.it.pradhan.beans;
-
-public class Game {
-	private String name;
-	private Players players;
-
-}
