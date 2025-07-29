@@ -1,0 +1,23 @@
+spring:
+  profiles:
+    active: dev  # This is okay here
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+product:
+  productNo: 555
+  productName: bike
+
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+
+product:
+  productNo: 222
+  productName: Rolex
