@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: dev  # This is okay here
+    active: test  # This is okay here
 
 ---
 spring:
