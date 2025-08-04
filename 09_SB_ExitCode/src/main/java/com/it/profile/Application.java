@@ -15,7 +15,7 @@ public class Application {
 		  
 		String track = shipmentTracker.track("ac3434");
 		System.out.println("status : " + track);
-		System.exit(1);
+		System.exit(10);
 	}
 
 }
